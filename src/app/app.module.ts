@@ -5,14 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HomePageModule } from './homepage/homepage.module';
 import { RegistrationComponent } from './registration/registration.component';
+import { RegistrationModule} from './registration/registration.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from '../app/modules/material/material.module';
+
 @NgModule({
   declarations: [
-    AppComponent,
-    RegistrationComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HomePageModule
+    AppRoutingModule, HomePageModule, RegistrationModule, BrowserAnimationsModule, MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

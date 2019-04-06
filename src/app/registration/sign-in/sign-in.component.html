@@ -1,0 +1,16 @@
+<div class="container">
+      <div class="title">Гільдія Українських Вчителів</div>
+  <mat-card>
+    <form [formGroup]="loginForm" (ngSubmit)="logIn(loginForm.value)">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="email">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" placeholder="password">
+      </mat-form-field>
+      <button mat-button class="reg-button">Ввійти</button>
+    </form>
+  </mat-card>
+</div>
