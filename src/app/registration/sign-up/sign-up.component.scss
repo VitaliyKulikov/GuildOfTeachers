@@ -24,6 +24,8 @@ flex-direction: column;
      font-family: 'ZCOOL XiaoWei', serif;
      color: rgb(232, 188, 50);
     font-size: 50px;
+    opacity: 1;
+    animation: appear 2s ease-in-out;
     @media screen and (max-width:567px){
      font-size: 45px;
      text-align: center;
@@ -33,6 +35,8 @@ flex-direction: column;
 mat-card{
      width: 384px;
      height: 400px;
+     animation: appear 2s ease-in-out;
+     opacity: 1;
      background: white;
      @media screen and (max-width:567px){
           width: 80%;
@@ -45,5 +49,13 @@ mat-card{
     .reg-button{
          background: rgb(232, 188, 50);
     }
+     }
+}
+@keyframes appear{
+     from{
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
      }
 }

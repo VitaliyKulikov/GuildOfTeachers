@@ -1,0 +1,91 @@
+.rectangle {
+  width: 1440PX;
+  height: 680px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.text_big {
+  margin-left: 139px;
+  padding-top: 89px;
+  margin-right: 67px;
+  width: 533px;
+  height: 131px;
+  font-family: OpenSans;
+  font-size: 48px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  letter-spacing: 0.96px;
+}
+
+.line {
+  width: 136px;
+  height: 4px;
+  opacity: 0.4;
+  background-color: #ffffff;
+  margin-left: 139px;
+  margin-top: 40px;
+}
+
+.text_small {
+  width: 461px;
+  height: 99px;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 139px;
+  margin-top: 51px;
+}
+.add_box {
+  width: 157px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-left: 139px;
+  margin-top: 50px;
+}
+
+.add_text {
+  width: 108px;
+  height: 20px;
+  font-family: OpenSans;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  color: #4299ff;
+  margin-left: 165px;
+  margin-top: -30px;
+}
+
+.rectangle {
+  width: 1440px;
+  height: 680px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rectangle_right {
+  width: 720px;
+  height: 680px;
+
+}
+
+.blue_rectangle {
+  background-color: #4299ff;
+  width: 720px;
+  height: 680px
+}
