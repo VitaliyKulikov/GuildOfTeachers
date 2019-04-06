@@ -1,0 +1,76 @@
+.container {
+  width: 1440px;
+  height: 315px;
+  background-color: #8c79ff;
+}
+
+.big_text {
+  width: 544px;
+  height: 55px;
+  font-family: OpenSans;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  margin-left: 400px;
+  padding-top: 60px;
+}
+
+.email_subscribe {
+  display: flex;
+  flex-direction: row;
+  margin-left: 460px;
+  margin-top: 50px;
+}
+
+.email {
+  width: 262px;
+ height: 48px;
+ background-color: #ffffff;
+ border: 1px solid white;
+ border-radius: 3%;
+
+
+}
+
+.subscribe {
+  width: 160px;
+  height: 48px;
+  border: solid 1px #ffffff;
+  border-radius: 3%;
+}
+
+.text_email {
+  width: 158px;
+  height: 25px;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #656565;
+  margin-top: 12px;
+  margin-left: 32px;
+  border: 1px solid white;
+
+}
+
+.text_subscribe {
+ width: 112px;
+ height: 20px;
+ font-family: OpenSans;
+ font-size: 14px;
+ font-weight: bold;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: normal;
+ letter-spacing: 0.7px;
+ color: #ffffff;
+ margin-left: 35px;
+ margin-top: 15px;
+}

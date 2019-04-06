@@ -70,6 +70,8 @@
   height: 680px;
   display: flex;
   flex-direction: row;
+  margin-top: 40px;
+
 }
 
 .rectangle_right {
@@ -86,4 +88,12 @@
   background-color: #4299ff;
   width: 720px;
   height: 680px
+}
+.yellow_rectangle {
+  background-image: url("../../../assets/pencil.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
