@@ -1,11 +1,3 @@
-.rectangle {
-  width: 50%;
-  height: 680px;
-  background-color: #4299ff;
-  display: flex;
-  flex-direction: row;
-
-}
 
 .text_big {
   margin-left: 139px;
@@ -72,7 +64,21 @@
   margin-top: -30px;
 }
 
-.rectangle_right {
-  width: 50%;
+.rectangle {
+  width: 1440px;
   height: 680px;
+  display: flex;
+  flex-direction: row;
+}
+
+.rectangle_right {
+  width: 720px;
+  height: 680px;
+
+}
+
+.blue_rectangle {
+  background-color: #4299ff;
+  width: 720px;
+  height: 680px
 }

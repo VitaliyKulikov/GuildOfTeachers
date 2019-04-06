@@ -11,14 +11,14 @@ export class SignUpComponent implements OnInit {
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
-   this.setForm();
+    this.setForm();
   }
   setForm() {
     this.loginForm = this.fb.group({
       username: [null],
       email: [null],
       password: [null],
-      role:[null]
+      role: [null]
     });
   }
   logIn(data) {
