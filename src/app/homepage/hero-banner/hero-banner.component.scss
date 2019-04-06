@@ -1,13 +1,7 @@
-.rectangle {
-  width: 1440PX;
-  height: 680px;
-  display: flex;
-  flex-direction: row;
-
-}
+* {margin: 0; max-width: 100%;}
 
 .text_big {
-  margin-left: 139px;
+  margin: auto;
   padding-top: 89px;
   margin-right: 67px;
   width: 533px;
@@ -72,20 +66,24 @@
 }
 
 .rectangle {
-  width: 1440px;
   height: 680px;
   display: flex;
   flex-direction: row;
 }
 
-.rectangle_right {
-  width: 720px;
+.blue_rectangle, .yellow_rectangle {
+  width: 50%;
   height: 680px;
+}
 
+.yellow_rectangle {
+  background-image: url("../../../assets/Images/pencils_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blue_rectangle {
   background-color: #4299ff;
-  width: 720px;
-  height: 680px
+
 }
