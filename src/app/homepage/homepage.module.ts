@@ -8,6 +8,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { NewsComponent } from './news/news.component';
 import { UpdatesComponent } from './updates/updates.component';
+import { OriginTeamComponent } from './origin-team/origin-team.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
     declarations: [
         HomepageComponent,
@@ -16,7 +18,9 @@ import { UpdatesComponent } from './updates/updates.component';
         AboutUsComponent,
         BenefitsComponent,
         NewsComponent,
-        UpdatesComponent
+        UpdatesComponent,
+        OriginTeamComponent,
+        FooterComponent
 
 
     ],
