@@ -43,11 +43,11 @@ export class RegistrationService {
   }
 
   login(credentials) {
-    return this.http.post(`${this.url}/api/login`, credentials)
+    return this.http.post(`${this.url}/api/Accounts/Login`, credentials)
       .pipe(
         tap(res => {
-          localStorage.setItem(TOKEN_KEY, res['token']);
-          this.user = this.helper.decodeToken(res['token']);
+          // localStorage.setItem(TOKEN_KEY, res['token']);
+          // this.user = this.helper.decodeToken(res['token']);
           this.authenticationState.next(true);
         }),
         catchError(e => {

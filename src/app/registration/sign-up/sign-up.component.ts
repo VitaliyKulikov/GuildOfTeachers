@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { UsernameValidator } from '../../validation';
 import { RegistrationService } from '../../services/registration.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material';
+import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -12,8 +16,8 @@ export class SignUpComponent implements OnInit {
   allCities = [{ name: 'Львів', value: 'Lviv' },
   { name: 'Київ', value: 'Kyiv' },
   { name: 'Дніпро', value: 'Dnipro' },
-  { name: 'Харків', value: 'Kharkiv' }]
-  constructor(private fb: FormBuilder, private service: RegistrationService) { }
+  { name: 'Харків', value: 'Kharkiv' }];
+  constructor(private fb: FormBuilder, public dialog: MatDialog, private service: RegistrationService, private router: Router) { }
 
   ngOnInit() {
     this.setForm();
@@ -22,17 +26,27 @@ export class SignUpComponent implements OnInit {
     this.loginForm = this.fb.group({
       username: [null, Validators.required],
       email: [null, Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')])],
-      password: [null, Validators.compose([
+      NotHashPassword: [null, Validators.compose([
         UsernameValidator.passwordValid(), Validators.required
       ])],
-      phone: [null],
-      role: [null]
+      phone: [null, Validators.required],
+      role: [null, Validators.required]
     });
   }
   logIn(data) {
     console.log(data);
     this.service.register(data).subscribe((res) => {
       console.log(res);
+      this.router.navigate(['/our-teacher']);
+    }, (err) => {
+      this.openDialog();
+    });
+  }
+  openDialog() {
+    this.dialog.open(ErrorMessageComponent, {
+      data: {
+        animal: 'panda'
+      }
     });
   }
 }
