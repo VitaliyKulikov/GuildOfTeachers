@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
+import { UsernameValidator } from '../../validation';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,6 +9,10 @@ import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Valida
 })
 export class SignUpComponent implements OnInit {
   loginForm: FormGroup;
+  allCities = [{ name: 'Львів', value: 'Lviv' },
+  { name: 'Київ', value: 'Kyiv' },
+  { name: 'Дніпро', value: 'Dnipro' },
+  { name: 'Харків', value: 'Kharkiv' }]
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -15,9 +20,12 @@ export class SignUpComponent implements OnInit {
   }
   setForm() {
     this.loginForm = this.fb.group({
-      username: [null],
-      email: [null],
-      password: [null],
+      username: [null, Validators.required],
+      email: [null, Validators.compose([Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')])],
+      password: [null, Validators.compose([
+        UsernameValidator.passwordValid(), Validators.required
+      ])],
+      phone: [null],
       role: [null]
     });
   }

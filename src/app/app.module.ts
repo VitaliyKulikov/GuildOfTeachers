@@ -3,18 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {HomePageModule } from './homepage/homepage.module';
+import { HomePageModule } from './homepage/homepage.module';
 import { RegistrationComponent } from './registration/registration.component';
-import { RegistrationModule} from './registration/registration.module';
+import { RegistrationModule } from './registration/registration.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../app/modules/material/material.module';
-
+import { OurTeacherModule } from './our-teacher/our-teacher.module';
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, OurTeacherModule,
     AppRoutingModule, HomePageModule, RegistrationModule, BrowserAnimationsModule, MaterialModule
   ],
   providers: [],

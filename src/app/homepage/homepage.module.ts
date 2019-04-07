@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { HeroBannerComponent } from './hero-banner/hero-banner.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BenefitsComponent } from './benefits/benefits.component';
+import { NewsComponent } from './news/news.component';
 import { UpdatesComponent } from './updates/updates.component';
 @NgModule({
     declarations: [
@@ -14,7 +15,10 @@ import { UpdatesComponent } from './updates/updates.component';
         HeroBannerComponent,
         AboutUsComponent,
         BenefitsComponent,
+        NewsComponent,
         UpdatesComponent
+
+
     ],
     imports: [
         BrowserModule,

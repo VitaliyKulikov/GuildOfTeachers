@@ -15,12 +15,24 @@
         <input matInput formControlName="password" placeholder="password">
       </mat-form-field>
       <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" type="tel" placeholder="phone" minlength=10 maxlength=10>
+      </mat-form-field>
+      <!-- <mat-form-field>
+        <mat-label>Місто</mat-label>
+        <mat-select formControlName="role">
+          <mat-option *ngFor="let city of allCities" value="city.value">
+            {{city.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field>
         <mat-label>Роль</mat-label>
         <mat-select formControlName="role">
-          <mat-option value='teacher'>
+          <mat-option value='2'>
             Вчитель
           </mat-option>
-          <mat-option value='mentor'>
+          <mat-option value='3'>
             Тренер
           </mat-option>
         </mat-select>
