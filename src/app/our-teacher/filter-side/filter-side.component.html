@@ -1,3 +1,36 @@
 <div class="filter-contain">
-  
+        <div class="input-group mb-3">
+            <label for="">Пошук по імені</label>
+                <input type="text" class="form-control" placeholder="Пошук по імені" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+    <div class="btn-group" dropdown>
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                aria-controls="dropdown-basic">
+          Дисципліни <span class="caret"></span>
+        </button>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+            role="menu" aria-labelledby="button-basic">
+          <li role="menuitem">Біологія</li>
+          <li role="menuitem">Математика</li>
+          <li role="menuitem">Українська мова</li>
+          <li class="divider dropdown-divider">Інформатика</li>
+          <li role="menuitem">Трудове навчання
+          </li>
+        </ul>
+      </div>
+      <div class="btn-group" dropdown>
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                aria-controls="dropdown-basic">
+          Місто <span class="caret"></span>
+        </button>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+            role="menu" aria-labelledby="button-basic">
+          <li role="menuitem">Львів</li>
+          <li role="menuitem">Київ</li>
+          <li role="menuitem">Харків</li>
+          <li class="divider dropdown-divider">Бібрка</li>
+          <li role="menuitem">Луцьк
+          </li>
+        </ul>
+      </div>
 </div>
