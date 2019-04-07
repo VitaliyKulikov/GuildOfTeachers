@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../app/modules/material/material.module';
 import { OurTeacherModule } from './our-teacher/our-teacher.module';
 import { JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
-import { GetUserComponent } from './service/get-user/get-user.component';
+// import { GetUserComponent } from './service/get-user/get-user.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 
@@ -25,7 +25,7 @@ export function jwtOptionsFactory() {
 @NgModule({
   declarations: [
     AppComponent,
-    GetUserComponent
+    // GetUserComponent
   ],
   imports: [
     BrowserModule, OurTeacherModule,
