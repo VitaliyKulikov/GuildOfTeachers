@@ -15,6 +15,10 @@
   letter-spacing: 1px;
   color: #ffffff;
   letter-spacing: 0.96px;
+  @media screen and (max-width:768px){
+    font-size: 35px;
+    margin-left: 3%;
+  }
 }
 
 .line {
@@ -24,6 +28,9 @@
   background-color: #ffffff;
   margin-left: 139px;
   margin-top: 40px;
+  @media screen and (max-width:768px){
+    display:none;
+  }
 }
 
 .text_small {
@@ -40,6 +47,10 @@
   font-size: 18px;
   margin-left: 139px;
   margin-top: 51px;
+  @media screen and (max-width:768px){
+    width: 98%;
+    margin-left: 3%;
+  }
 }
 .add_box {
   width: 157px;
@@ -69,8 +80,14 @@
   height: 680px;
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
-
+  animation: appear 3s ease-in-out;
+  // margin-top: 40px;
+@media screen and (max-width:768px){
+  flex-direction: column;
+  div{
+    width: 100%;
+  }
+}
 }
 
 .blue_rectangle, .yellow_rectangle {
@@ -88,4 +105,12 @@
 .blue_rectangle {
   background-color: #4299ff;
 
+}
+@keyframes appear{
+  from{
+opacity: 0;
+  }
+  to{
+opacity: 1;
+  }
 }

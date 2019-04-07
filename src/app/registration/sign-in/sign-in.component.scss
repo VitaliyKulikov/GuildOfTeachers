@@ -24,6 +24,7 @@
           font-family: 'ZCOOL XiaoWei', serif;
           color: rgb(232, 188, 50);
          font-size: 50px;
+         animation: appear 3s ease-in-out;
          @media screen and (max-width:567px){
           font-size: 45px;
           text-align: center;
@@ -32,8 +33,10 @@
      }
      mat-card{
           width: 384px;
-          height: 400px;
+          height: 301px;
           background: white;
+          opacity: 1;
+          animation: appear 3s ease-in-out;
           @media screen and (max-width:567px){
                width: 80%;
           }
@@ -45,5 +48,13 @@
          .reg-button{
               background: rgb(232, 188, 50);
          }
+          }
+     }
+     @keyframes appear{
+          from{
+opacity: 0;
+          }
+          to{
+opacity: 1;
           }
      }

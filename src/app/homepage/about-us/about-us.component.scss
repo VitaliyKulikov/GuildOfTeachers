@@ -2,12 +2,13 @@
     margin-top: 70px;
     display: flex;
     margin-bottom: 100px;
+    animation: appear 3s ease-in-out;
     // justify-content: space-between;
     @media screen and (max-width:768px){
         flex-direction:column
     }
     .first-block{
-background-image: url('/assets/Image (1).png');
+background-image: url('/assets/Images/pencils_1.png');
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -83,5 +84,13 @@ margin-left: 10%;
     @media screen and (max-width:768px){
         width: 100%;}
 }
+    }
+}
+@keyframes appear{
+    from{
+opacity: 0;
+    }
+    to{
+opacity: 1;
     }
 }
