@@ -5,7 +5,8 @@
 }
 
 .big_text {
-  width: 544px;
+  width: 100%;
+  text-align: center;
   height: 55px;
   font-family: OpenSans;
   font-size: 40px;
@@ -15,15 +16,14 @@
   line-height: normal;
   letter-spacing: 0.8px;
   color: #ffffff;
-  margin-left: 400px;
   padding-top: 60px;
 }
 
 .email_subscribe {
   display: flex;
   flex-direction: row;
-  margin-left: 460px;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .email {

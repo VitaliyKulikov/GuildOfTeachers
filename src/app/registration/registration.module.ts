@@ -7,19 +7,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../modules/material/material.module';
-import {RegistrationService} from '../services/registration.service';
-import {ErrorMessageComponent} from './../components/error-message/error-message.component';
-import { from } from 'rxjs';
+import { RegistrationService } from '../services/registration.service';
+import { ErrorMessageComponent } from './../components/error-message/error-message.component';
 @NgModule({
   declarations: [
     SignUpComponent,
-    SignInComponent,ErrorMessageComponent
+    SignInComponent, ErrorMessageComponent
 
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RegistrationRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule
   ],
   providers: [RegistrationService],
-  entryComponents:[ErrorMessageComponent]
+  entryComponents: [ErrorMessageComponent]
 })
 export class RegistrationModule { }

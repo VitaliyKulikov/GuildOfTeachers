@@ -2,6 +2,11 @@
 
 .main_div {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 .organisation {
   width: 308.1px;
@@ -14,8 +19,9 @@
   line-height: normal;
   letter-spacing: 0.2px;
   color: #4299ff;
-  margin-left: 800px;
+ // margin-left: 800px;
   margin-top: 40px;
+  text-align: center;
 }
 
 .our_team {
@@ -29,7 +35,8 @@
   line-height: normal;
   letter-spacing: 0.8px;
   color: #151719;
-  margin-left: 665px;
+  text-align: center;
+ // margin-left: 665px;
   margin-top: 20px;
 }
 
@@ -44,7 +51,7 @@
  line-height: normal;
  letter-spacing: normal;
  color: #656565;
- margin-left: 600px;
+// margin-left: 600px;
  margin-top: 20px;
  text-align: center;
 
