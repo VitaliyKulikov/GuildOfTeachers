@@ -9,12 +9,12 @@ const TOKEN_KEY = 'access_token';
   providedIn: 'root'
 })
 export class RegistrationService {
-  url = 'https://reqres.in';
+  url = 'https://teachersguide95.azurewebsites.net';
   user = null;
   authenticationState = new BehaviorSubject(false);
 
   constructor(private http: HttpClient, private helper: JwtHelperService) {
-    this.checkToken();
+  //  this.checkToken();
   }
   checkToken() {
     const token = localStorage.getItem(TOKEN_KEY);
@@ -35,7 +35,7 @@ export class RegistrationService {
     console.log(this.authenticationState.value);
   }
   register(credentials) {
-    return this.http.post(`${this.url}`, credentials).pipe(
+    return this.http.post(`${this.url}/api/users/create`, credentials).pipe(
       catchError(e => {
         throw new Error(e);
       })
@@ -43,11 +43,11 @@ export class RegistrationService {
   }
 
   login(credentials) {
-    return this.http.post(`${this.url}/api/login`, credentials)
+    return this.http.post(`${this.url}/api/Accounts/Login`, credentials)
       .pipe(
         tap(res => {
-          localStorage.setItem(TOKEN_KEY, res['token']);
-          this.user = this.helper.decodeToken(res['token']);
+          // localStorage.setItem(TOKEN_KEY, res['token']);
+          // this.user = this.helper.decodeToken(res['token']);
           this.authenticationState.next(true);
         }),
         catchError(e => {
