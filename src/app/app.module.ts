@@ -11,7 +11,6 @@ import { MaterialModule } from '../app/modules/material/material.module';
 import { OurTeacherModule } from './our-teacher/our-teacher.module';
 import { JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { GetUserComponent } from './service/get-user/get-user.component';
 
 
 export function jwtOptionsFactory() {
@@ -24,8 +23,7 @@ export function jwtOptionsFactory() {
 }
 @NgModule({
   declarations: [
-    AppComponent,
-    GetUserComponent
+    AppComponent
   ],
   imports: [
     BrowserModule, OurTeacherModule, NgbModule,
