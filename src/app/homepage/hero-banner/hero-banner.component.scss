@@ -28,6 +28,7 @@
   background-color: #ffffff;
   margin-left: 139px;
   margin-top: 40px;
+  display: none;
   @media screen and (max-width:768px){
     display:none;
   }
@@ -45,8 +46,8 @@
   letter-spacing: normal;
   color: #ffffff;
   font-size: 18px;
-  margin-left: 139px;
-  margin-top: 51px;
+  margin-left: 119px;
+  margin-top: 129px;
   @media screen and (max-width:768px){
     width: 98%;
     margin-left: 3%;
@@ -96,7 +97,7 @@
 }
 
 .yellow_rectangle {
-  background-image: url("../../../assets/Images/pencils_1.png");
+  background-image: url("../../../assets/Photo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
