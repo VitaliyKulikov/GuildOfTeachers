@@ -1,0 +1,42 @@
+.contain-user{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width:768px){
+        flex-direction: column;
+    }
+.item{
+    width: 25%;
+    margin-bottom: 40px;
+    .picture{
+        width: 246px;
+        height: 246px;
+        background-color: #c4c4c4;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .name{
+        font-family: OpenSans;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #151719;
+        margin: 16px 0 8px 0;
+    }
+    .descipline{
+        font-family: OpenSans;
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 0.3px;
+        color: #656565;
+    }
+}    
+}

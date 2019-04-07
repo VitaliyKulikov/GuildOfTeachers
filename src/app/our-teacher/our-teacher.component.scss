@@ -20,11 +20,17 @@
     display: flex;
     justify-content: space-between;
     app-filter-side{
-        width: 30%;
+        width: 20%;
         height: 100%;
     }
     app-user-side{
-        width: 65%;
+        width: 75%;
         height: 100%;
+    }
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        app-filter-side, app-user-side{
+width:100%;
+        }
     }
 }
