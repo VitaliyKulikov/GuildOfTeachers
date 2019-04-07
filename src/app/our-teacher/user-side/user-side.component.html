@@ -1,3 +1,10 @@
-<p>
-  user-side works!
-</p>
+<div class="contain-user">
+  <div *ngFor="let i of teacher" class="item">
+    <div class="picture">
+      <img src="" alt="">
+    </div>
+    <div class="name">{{i.userName}}</div>
+    <div class="descipline">sdfgh</div>
+    <div class="descipline">{{i.subject}}</div>
+  </div>
+</div>
