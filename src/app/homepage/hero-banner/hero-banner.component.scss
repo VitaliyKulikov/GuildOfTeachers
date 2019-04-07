@@ -1,7 +1,7 @@
-* {margin: 0; max-width: 100%}
+* {margin: 0; max-width: 100%;}
 
 .text_big {
-  margin-left: 139px;
+  margin: auto;
   padding-top: 89px;
   margin-right: 67px;
   width: 533px;
@@ -15,6 +15,10 @@
   letter-spacing: 1px;
   color: #ffffff;
   letter-spacing: 0.96px;
+  @media screen and (max-width:768px){
+    font-size: 35px;
+    margin-left: 3%;
+  }
 }
 
 .line {
@@ -24,6 +28,9 @@
   background-color: #ffffff;
   margin-left: 139px;
   margin-top: 40px;
+  @media screen and (max-width:768px){
+    display:none;
+  }
 }
 
 .text_small {
@@ -40,6 +47,10 @@
   font-size: 18px;
   margin-left: 139px;
   margin-top: 51px;
+  @media screen and (max-width:768px){
+    width: 98%;
+    margin-left: 3%;
+  }
 }
 .add_box {
   width: 157px;
@@ -66,34 +77,40 @@
 }
 
 .rectangle {
-  width: 1440px;
   height: 680px;
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
-
+  animation: appear 3s ease-in-out;
+  // margin-top: 40px;
+@media screen and (max-width:768px){
+  flex-direction: column;
+  div{
+    width: 100%;
+  }
+}
 }
 
-.rectangle_right {
-  width: 720px;
+.blue_rectangle, .yellow_rectangle {
+  width: 50%;
   height: 680px;
 }
 
-.rectangle_right img {
-  width: 100%;
-  height: 100%;
+.yellow_rectangle {
+  background-image: url("../../../assets/Images/pencils_1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .blue_rectangle {
   background-color: #4299ff;
-  width: 720px;
-  height: 680px
+
 }
-.yellow_rectangle {
-  background-image: url("../../../assets/pencil.png");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@keyframes appear{
+  from{
+opacity: 0;
+  }
+  to{
+opacity: 1;
+  }
 }
