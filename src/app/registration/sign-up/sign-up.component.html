@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="title">Гільдія Українських Вчителів</div>
+  <mat-card>
+    <form [formGroup]="loginForm" (ngSubmit)="logIn(loginForm.value)">
+      <mat-form-field>
+        <mat-label>Your Name</mat-label>
+        <input matInput formControlName="username">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="email">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="NotHashPassword" placeholder="password">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" type="tel" placeholder="phone" minlength=10 maxlength=10>
+      </mat-form-field>
+      <!-- <mat-form-field>
+        <mat-label>Місто</mat-label>
+        <mat-select formControlName="role">
+          <mat-option *ngFor="let city of allCities" value="city.value">
+            {{city.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      <mat-form-field>
+        <mat-label>Роль</mat-label>
+        <mat-select formControlName="role">
+          <mat-option value='2'>
+            Вчитель
+          </mat-option>
+          <mat-option value='3'>
+            Тренер
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button mat-button class="reg-button" [disabled]="!loginForm.valid">Зареєструватися</button>
+    </form>
+  </mat-card>
+</div>
