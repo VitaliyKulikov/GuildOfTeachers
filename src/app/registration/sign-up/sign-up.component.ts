@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroupDirective, FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
 import { UsernameValidator } from '../../validation';
-
+import { RegistrationService } from '../../services/registration.service';
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -13,7 +13,7 @@ export class SignUpComponent implements OnInit {
   { name: 'Київ', value: 'Kyiv' },
   { name: 'Дніпро', value: 'Dnipro' },
   { name: 'Харків', value: 'Kharkiv' }]
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private service: RegistrationService) { }
 
   ngOnInit() {
     this.setForm();
@@ -30,8 +30,9 @@ export class SignUpComponent implements OnInit {
     });
   }
   logIn(data) {
-    // this.service.login(data).subscribe((res) => {
-    //   console.log(res);
-    // });
+    console.log(data);
+    this.service.register(data).subscribe((res) => {
+      console.log(res);
+    });
   }
 }

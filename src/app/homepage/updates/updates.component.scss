@@ -16,24 +16,31 @@
   letter-spacing: 0.8px;
   color: #ffffff;
   margin-left: 400px;
-  padding-top: 30px;
+  padding-top: 60px;
 }
 
 .email_subscribe {
   display: flex;
   flex-direction: row;
+  margin-left: 460px;
+  margin-top: 50px;
 }
 
 .email {
   width: 262px;
  height: 48px;
  background-color: #ffffff;
+ border: 1px solid white;
+ border-radius: 3%;
+
+
 }
 
 .subscribe {
-  width: 1440px;
-  height: 315px;
-  background-color: #8c79ff;
+  width: 160px;
+  height: 48px;
+  border: solid 1px #ffffff;
+  border-radius: 3%;
 }
 
 .text_email {
@@ -64,4 +71,6 @@
  line-height: normal;
  letter-spacing: 0.7px;
  color: #ffffff;
+ margin-left: 35px;
+ margin-top: 15px;
 }

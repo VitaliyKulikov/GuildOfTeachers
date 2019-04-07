@@ -7,6 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../modules/material/material.module';
+import {RegistrationService} from '../services/registration.service';
 @NgModule({
   declarations: [
     SignUpComponent,
@@ -16,6 +17,6 @@ import { MaterialModule } from '../modules/material/material.module';
   imports: [
     BrowserModule, BrowserAnimationsModule, MaterialModule, RegistrationRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule
   ],
-  providers: []
+  providers: [RegistrationService]
 })
 export class RegistrationModule { }
