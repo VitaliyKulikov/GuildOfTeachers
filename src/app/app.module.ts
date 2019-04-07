@@ -10,8 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../app/modules/material/material.module';
 import { OurTeacherModule } from './our-teacher/our-teacher.module';
 import { JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
-import { GetUserComponent } from './service/get-user/get-user.component';
+//import { GetUserComponent } from './service/get-user/get-user.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { ProfileComponent } from './profile/profile.component';
+import { ProfileDataComponent } from './profile-data/profile-data.component';
 
 
 export function jwtOptionsFactory() {
@@ -24,7 +26,9 @@ export function jwtOptionsFactory() {
 }
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileComponent,
+    ProfileDataComponent
   ],
   imports: [
     BrowserModule, OurTeacherModule,
